@@ -4,7 +4,7 @@ A standalone, high-performance React component visualizing a "Product Marketing 
 
 ## Description
 
-The `GTMAudienceTile` is a 600x600 pixel interactive card designed for dashboards or landing pages. It features a central "Core Product" node surrounded by floating satellites representing Audience, Landscape, Messaging, and Narrative. It utilizes a deep radial gradient background, glassmorphism effects, and continuous floating animations to create a modern, high-tech aesthetic.
+The `ProductGTMTile` is a 600x600 pixel interactive card designed for dashboards or landing pages. It features a central "Core Product" node surrounded by floating satellites representing Audience, Landscape, Messaging, and Narrative. It utilizes a deep radial gradient background, glassmorphism effects, and continuous floating animations to create a modern, high-tech aesthetic.
 
 ## Tech Stack
 
@@ -18,13 +18,13 @@ The `GTMAudienceTile` is a 600x600 pixel interactive card designed for dashboard
 
 1.  Import the component:
     ```tsx
-    import GTMAudienceTile from './components/GTMAudienceTile';
+    import ProductGTMTile from './components/ProductGTMTile';
     ```
 
 2.  Place it in your layout. The component has a fixed size of `600px` by `600px`. Ensure the parent container allows for this size or apply scaling if necessary.
     ```tsx
     <div className="flex justify-center items-center h-screen bg-slate-900">
-      <GTMAudienceTile />
+      <ProductGTMTile />
     </div>
     ```
 
