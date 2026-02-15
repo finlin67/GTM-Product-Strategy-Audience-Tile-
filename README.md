@@ -21,7 +21,7 @@ The `ProductGTMTile` is a 600x600 pixel interactive card designed for dashboards
     import ProductGTMTile from './components/ProductGTMTile';
     ```
 
-2.  Place it in your layout. The component has a fixed size of `600px` by `600px`. Ensure the parent container allows for this size or apply scaling if necessary.
+2.  Place it in your layout. The component is responsive, designed to fit a square container up to a maximum size of `600px` by `600px`.
     ```tsx
     <div className="flex justify-center items-center h-screen bg-slate-900">
       <ProductGTMTile />

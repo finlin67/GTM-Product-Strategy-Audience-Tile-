@@ -18,7 +18,7 @@ export default function ProductGTMTile() {
   const glassClass = "bg-[#0f172a]/40 backdrop-blur-md border border-cyan-500/10 shadow-lg";
 
   return (
-    <div className="relative w-[600px] h-[600px] rounded-[2rem] border border-cyan-500/10 shadow-2xl overflow-hidden font-sans select-none bg-[#020617]">
+    <div className="relative w-full aspect-square max-w-[600px] rounded-[2rem] border border-cyan-500/10 shadow-2xl overflow-hidden font-sans select-none bg-[#020617]">
       {/* Background Gradient - Deep Navy Void */}
       <div 
         className="absolute inset-0"
@@ -66,7 +66,7 @@ export default function ProductGTMTile() {
       <motion.div 
         className="absolute top-16 left-16 z-20"
         animate={{ y: [0, -10, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0 }}
+        transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" as const, delay: 0 }}
       >
         <div 
           onClick={() => console.log('Audience card clicked')}
@@ -88,7 +88,7 @@ export default function ProductGTMTile() {
       <motion.div 
         className="absolute bottom-20 left-10 z-20"
         animate={{ y: [0, -10, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+        transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" as const, delay: 1.5 }}
       >
         <div 
           onClick={() => console.log('Landscape card clicked')}
@@ -114,7 +114,7 @@ export default function ProductGTMTile() {
       <motion.div 
         className="absolute top-24 right-12 z-20"
         animate={{ y: [0, -10, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+        transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" as const, delay: 0.8 }}
       >
         <div 
           onClick={() => console.log('Messaging card clicked')}
@@ -136,7 +136,7 @@ export default function ProductGTMTile() {
       <motion.div 
         className="absolute bottom-16 right-16 z-20"
         animate={{ y: [0, -10, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2.2 }}
+        transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" as const, delay: 2.2 }}
       >
         <div 
           onClick={() => console.log('Narrative card clicked')}
